@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="tr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AZERBAIJAN - Ateşler Ülkesi. Azerbaycan'ın tarihini, zengin kültürünü, şehirlerini, edebiyatını, mutfağını ve doğal güzelliklerini tanıtan kapsamlı rehber.">
+  <meta name="keywords" content="Azerbaycan, Bakü, Ateşler Ülkesi, Odlar Yurdu, Karabağ, Şuşa, Şeki, Gence, Gobustan, Azerbaycan Tarihi, Azerbaycan Kültürü">
+  <meta name="author" content="Google Antigravity">
+  <title>AZERBAYCAN — Ateşler Ülkesi | Odlar Yurdu</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="images/flag.svg">
+
+  <!-- Google Fonts: Outfit & Playfair Display -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==================== ÜST GEZİNME ÇUBUĞU (NAVBAR) ==================== -->
+  <header class="site-header" id="header">
+    <div class="nav-container">
+      <!-- Logo ve Bayrak -->
+      <a href="#hero" class="brand-logo" aria-label="Azerbaycan Ana Sayfa">
+        <div class="flag-icon-wrapper">
+          <img src="images/flag.svg" alt="Azerbaycan Bayrağı" class="nav-flag-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-title">AZERBAYCAN</span>
+          <span class="brand-subtitle">Ateşler Ülkesi</span>
+        </div>
+      </a>
+
+      <!-- Masaüstü Gezinme Menüsü -->
+      <nav class="main-nav" id="mainNav" aria-label="Ana Menü">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
+          <li class="nav-item"><a href="#tarih" class="nav-link"><i class="fa-solid fa-landmark-dome"></i> Tarih</a></li>
+          <li class="nav-item"><a href="#sehirler" class="nav-link"><i class="fa-solid fa-city"></i> Şehirler</a></li>
+          <li class="nav-item"><a href="#kultur" class="nav-link"><i class="fa-solid fa-palette"></i> Kültür &amp; Gelenek</a></li>
+          <li class="nav-item"><a href="#edebiyat" class="nav-link"><i class="fa-solid fa-feather-pointed"></i> Edebiyat &amp; Sanat</a></li>
+          <li class="nav-item"><a href="#doga" class="nav-link"><i class="fa-solid fa-mountain-sun"></i> Doğa</a></li>
+          <li class="nav-item"><a href="#quiz" class="nav-link quiz-nav-link"><i class="fa-solid fa-circle-question"></i> Mini Quiz</a></li>
+        </ul>
+      </nav>
+
+      <!-- Sağ Kontroller: Tema Değiştirici & Mobil Hamburger -->
+      <div class="header-actions">
+        <!-- Tema Değiştirme Butonu -->
+        <button id="themeToggleBtn" class="theme-toggle-btn" aria-label="Açık/Koyu Tema Değiştir" title="Temayı Değiştir">
+          <i class="fa-solid fa-moon icon-moon"></i>
+          <i class="fa-solid fa-sun icon-sun"></i>
+        </button>
+
+        <!-- Mobil Menü Aç/Kapa Butonu -->
+        <button id="hamburgerBtn" class="hamburger-btn" aria-label="Menüyü Aç/Kapat" aria-expanded="false" aria-controls="mobileDrawer">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobil Çekmece Menü (Mobile Drawer Menu) -->
+  <div id="mobileDrawer" class="mobile-drawer" aria-hidden="true">
+    <div class="mobile-drawer-header">
+      <div class="brand-logo">
+        <img src="images/flag.svg" alt="Azerbaycan Bayrağı" class="nav-flag-img">
+        <div class="brand-text">
+          <span class="brand-title">AZERBAYCAN</span>
+          <span class="brand-subtitle">Ateşler Ülkesi</span>
+        </div>
+      </div>
+      <button id="closeDrawerBtn" class="close-drawer-btn" aria-label="Menüyü Kapat">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li><a href="#hero" class="mobile-nav-link"><i class="fa-solid fa-house"></i> Ana Sayfa</a></li>
+      <li><a href="#tarih" class="mobile-nav-link"><i class="fa-solid fa-landmark-dome"></i> Tarih</a></li>
+      <li><a href="#sehirler" class="mobile-nav-link"><i class="fa-solid fa-city"></i> Şehirler &amp; Gezi</a></li>
+      <li><a href="#kultur" class="mobile-nav-link"><i class="fa-solid fa-palette"></i> Kültür ve Gelenekler</a></li>
+      <li><a href="#edebiyat" class="mobile-nav-link"><i class="fa-solid fa-feather-pointed"></i> Edebiyat ve Sanat</a></li>
+      <li><a href="#doga" class="mobile-nav-link"><i class="fa-solid fa-mountain-sun"></i> Doğal Güzellikler</a></li>
+      <li><a href="#quiz" class="mobile-nav-link highlight-link"><i class="fa-solid fa-circle-question"></i> Azerbaycan Bilgi Yarışması</a></li>
+    </ul>
+    <div class="mobile-drawer-footer">
+      <div class="flag-strip-mini">
+        <span class="stripe-blue"></span>
+        <span class="stripe-red"></span>
+        <span class="stripe-green"></span>
+      </div>
+      <p>Bir Millet, İki Devlet 🇹🇷 🇦🇿</p>
+    </div>
+  </div>
+  <div id="drawerOverlay" class="drawer-overlay" aria-hidden="true"></div>
+
+  <!-- ==================== ANA İÇERİK (MAIN) ==================== -->
+  <main>
+
+    <!-- 1. BÖLÜM: HERO / KARŞILAMA EKRANI (ANA SAYFA) -->
+    <section id="hero" class="hero-section">
+      <div class="hero-bg-overlay"></div>
+      <div class="hero-content container">
+        
+        <!-- Bayrak ve Rozet -->
+        <div class="hero-badge">
+          <span class="hero-badge-flag">
+            <img src="images/flag.svg" alt="Azerbaycan Bayrağı">
+          </span>
+          <span class="hero-badge-text">ODLAR YURDU • KAFKASYA'NIN İNCİSİ</span>
+        </div>
+
+        <!-- Ana Başlık ve Slogan -->
+        <h1 class="hero-title">
+          AZERBAYCAN
+          <span class="hero-title-accent">Ateşler Ülkesi</span>
+        </h1>
+
+        <p class="hero-description">
+          Doğu ile Batı’nın, kadim İpek Yolu medeniyetinin ve çağdaş mimarinin büyüleyici buluşma noktası. Bin yıllık tarihi, zengin kültürel mirası, eşsiz lezzetleri ve misafirperver halkıyla Azerbaycan’ı keşfetmeye hazır mısınız?
+        </p>
+
+        <!-- Yönlendirme Butonları -->
+        <div class="hero-actions">
+          <a href="#sehirler" class="btn btn-primary">
+            <i class="fa-solid fa-compass"></i> Azerbaycan'ı Keşfet
+          </a>
+          <a href="#tarih" class="btn btn-outline">
+            <i class="fa-solid fa-scroll"></i> Tarihî Yolculuk
+          </a>
+          <a href="#quiz" class="btn btn-accent">
+            <i class="fa-solid fa-award"></i> Bilgini Test Et
+          </a>
+        </div>
+
+        <!-- İstatistik Şeridi -->
+        <div class="hero-stats-grid">
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="stat-info">
+              <span class="stat-number">Bakü</span>
+              <span class="stat-label">Hazar'ın Başkenti</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+            <div class="stat-info">
+              <span class="stat-number">10+ Milyon</span>
+              <span class="stat-label">Dinamik Nüfus</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-monument"></i></div>
+            <div class="stat-info">
+              <span class="stat-number">UNESCO</span>
+              <span class="stat-label">5 Somut &amp; 15+ Kültürel Miras</span>
+            </div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+            <div class="stat-info">
+              <span class="stat-number">9 / 11</span>
+              <span class="stat-label">İklim Kuşağı Çeşitliliği</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Aşağı Kaydırma Göstergesi -->
+      <a href="#tarih" class="hero-scroll-down" aria-label="Aşağı Kaydır">
+        <span>Keşfe Başla</span>
+        <i class="fa-solid fa-chevron-down bounce-icon"></i>
+      </a>
+    </section>
+
+    <!-- 2. BÖLÜM: AZERBAYCAN'IN TARİHİ (KRONOLOJİK ZAMAN ÇİZELGESİ) -->
+    <section id="tarih" class="section tarih-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-hourglass-half"></i> KRONOLOJİ</span>
+          <h2 class="section-title">Azerbaycan'ın Köklü Tarihi</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Kafkasya'nın kalbinde binlerce yıllık medeniyetlerin, büyük imparatorlukların, bağımsız hanlıkların ve hürriyet meşalesinin izinde tarihsel bir yolculuk.
+          </p>
+        </div>
+
+        <!-- Kronolojik Zaman Çizelgesi (Timeline) -->
+        <div class="timeline">
+          
+          <!-- 1. Dönem: Antik Dönem -->
+          <article class="timeline-item left">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-gem"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-image-wrapper">
+                <img src="images/gobustan.jpg" alt="Gobustan Kaya Resimleri ve Antik Dönem" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+                <span class="timeline-date-badge">M.Ö. 1. Binyıl – M.S. 4. Yüzyıl</span>
+              </div>
+              <div class="timeline-body">
+                <h3 class="timeline-heading">Antik Dönem, Manna &amp; Kafkas Albanyası</h3>
+                <p>
+                  Azerbaycan toprakları insanlığın en eski yerleşim alanlarındandır. M.Ö. 1. binyılda Manna ve Medya uygarlıklarıyla başlayan devletleşme süreci, M.Ö. 4. yüzyılda Atropatena ve Kafkas Albanyası ile kurumsallaşmıştır. "Azerbaycan" adının kökeni de Atropatena hükümdarı Atropat'tan ve eski dilde "Ateşin Koruyucusu" anlamından gelmektedir.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Manna Devleti</span>
+                  <span class="tag">Atropatena</span>
+                  <span class="tag">Kafkas Albanyası</span>
+                  <span class="tag">Zerdüştlük</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 2. Dönem: Şirvanşahlar Devleti -->
+          <article class="timeline-item right">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-crown"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-image-wrapper">
+                <img src="images/history_shirvanshah.jpg" alt="Şirvanşahlar Sarayı" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+                <span class="timeline-date-badge">861 – 1538</span>
+              </div>
+              <div class="timeline-body">
+                <h3 class="timeline-heading">Şirvanşahlar Devleti ve İpek Yolu Refahı</h3>
+                <p>
+                  Azerbaycan tarihinin en uzun ömürlü hanedanlıklarından biri olan Şirvanşahlar Devleti, Bakü'yü başkent yapmış ve ülkeyi İpek Yolu'nun vazgeçilmez ticaret ve kültür merkezine dönüştürmüştür. Bugün UNESCO Dünya Mirası Listesi'nde yer alan muhteşem <strong>Şirvanşahlar Sarayı</strong> ve efsanevi <strong>Kız Kalesi</strong> bu dönemin mimari şaheserleridir.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Şirvanşahlar</span>
+                  <span class="tag">Bakü Başkent</span>
+                  <span class="tag">Kız Kalesi</span>
+                  <span class="tag">İpek Yolu</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 3. Dönem: Safeviler ve Hanlıklar -->
+          <article class="timeline-item left">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-image-wrapper">
+                <img src="images/history_safavid.jpg" alt="Şah İsmail Safevi Dönemi" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+                <span class="timeline-date-badge">1501 – 1828</span>
+              </div>
+              <div class="timeline-body">
+                <h3 class="timeline-heading">Safeviler İmparatorluğu ve Bağımsız Hanlıklar</h3>
+                <p>
+                  1501 yılında Şah İsmail Hatai tarafından temelleri atılan Safevi Devleti, Azerbaycan Türkçesini saray ve ordu dili yapmış; sanat, minyatür ve edebiyatta büyük bir aydınlanma sağlamıştır. 18. yüzyılda ise Karabağ, Şeki, Gence, Bakü, Kuba ve Nahçıvan gibi bağımsız Azerbaycan Hanlıkları dönemi yaşanmış, bölgesel kültür ve mimari zirveye ulaşmıştır.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Şah İsmail Hatai</span>
+                  <span class="tag">Karabağ Hanlığı</span>
+                  <span class="tag">Şeki Hanlığı</span>
+                  <span class="tag">Gence Hanlığı</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 4. Dönem: Çarlık Rusyası ve Petrol Patlaması -->
+          <article class="timeline-item right">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-oil-well"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-image-wrapper">
+                <img src="images/baku.jpg" alt="19. Yüzyıl Bakü ve Petrol Dönemi" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+                <span class="timeline-date-badge">1828 – 1917</span>
+              </div>
+              <div class="timeline-body">
+                <h3 class="timeline-heading">Çarlık Dönemi ve Bakü'nün Sanayi Devrimi</h3>
+                <p>
+                  1813 Gülistan ve 1828 Türkmençay antlaşmalarıyla Azerbaycan toprakları bölündü ve kuzeyi Çarlık Rusyası idaresine girdi. 19. yüzyılın sonlarında Bakü'de yaşanan devasa petrol patlaması kenti dünya petrol üretiminin %50'sini karşılayan küresel bir sanayi merkezine çevirdi. Nobel kardeşler ve Rothschild'ların yatırımlarıyla modern tiyatrolar, gazeteler (Ekinçi) ve okullar açıldı.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Petrol Patlaması</span>
+                  <span class="tag">Nobel Kardeşler</span>
+                  <span class="tag">Ekinçi Gazetesi</span>
+                  <span class="tag">Hacı Zeynelabidin Tagiyev</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 5. Dönem: Azerbaycan Demokratik Cumhuriyeti (1918) -->
+          <article class="timeline-item left">
+            <div class="timeline-marker highlight-marker">
+              <i class="fa-solid fa-flag"></i>
+            </div>
+            <div class="timeline-card highlight-card">
+              <div class="timeline-image-wrapper">
+                <img src="images/history_adr.jpg" alt="Azerbaycan Demokratik Cumhuriyeti 1918" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+                <span class="timeline-date-badge gold">28 Mayıs 1918 – 1920</span>
+              </div>
+              <div class="timeline-body">
+                <h3 class="timeline-heading">Azerbaycan Demokratik Cumhuriyeti (Doğu'nun İlk Cumhuriyeti)</h3>
+                <p>
+                  Mehmet Emin Resulzade ve silah arkadaşları önderliğinde 28 Mayıs 1918'de kurulan Azerbaycan Demokratik Cumhuriyeti; <strong>tüm Müslüman Doğu dünyasında ve Türk aleminde kurulan İLK demokratik ve laik cumhuriyettir</strong>. Kadınlara seçme ve seçilme hakkını birçok Batı ülkesinden yıllar önce tanıyan bu öncü cumhuriyet, bağımsızlık mefkuresinin sönmez meşalesini yakmıştır.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag tag-gold">M. Emin Resulzade</span>
+                  <span class="tag tag-gold">İlk Müslüman Cumhuriyet</span>
+                  <span class="tag tag-gold">Kadın Hakları Öncüsü</span>
+                  <span class="tag tag-gold">İstiklal Beyannamesi</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- 6. Dönem: Modern Bağımsız Azerbaycan -->
+          <article class="timeline-item right">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-image-wrapper">
+                <img src="images/history_modern.jpg" alt="Modern Azerbaycan ve Bakü" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+                <span class="timeline-date-badge">1991 – Günümüz</span>
+              </div>
+              <div class="timeline-body">
+                <h3 class="timeline-heading">Modern Azerbaycan Cumhuriyeti ve Geleceğe Yürüyüş</h3>
+                <p>
+                  18 Ekim 1991'de bağımsızlığını yeniden ilan eden Azerbaycan; Haydar Aliyev'in liderliğinde imzalanan "Asrın Anlaşması" (Bakü-Tiflis-Ceyhan ve TANAP boru hatları) ile küresel bir enerji köprüsü hâline gelmiştir. Günümüzde zengin kültür mirası, modern mimarisi, uluslararası spor ve sanat organizasyonları ve yeniden imar edilen Karabağ zaferiyle Kafkasya'nın parlayan yıldızıdır.
+                </p>
+                <div class="timeline-tags">
+                  <span class="tag">Yeniden Bağımsızlık</span>
+                  <span class="tag">Asrın Anlaşması</span>
+                  <span class="tag">Zaha Hadid Mimarisi</span>
+                  <span class="tag">Karabağ İmarı</span>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 3. BÖLÜM: ŞEHİRLER VE TURİSTİK YERLER (ARAMA VE FİLTRELEME SİSTEMİ) -->
+    <section id="sehirler" class="section sehirler-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-map-location-dot"></i> KEŞİF ROTASI</span>
+          <h2 class="section-title">Şehirler ve Turistik Yerler</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Hazar'ın rüzgarlı kıyılarından Kafkasya'nın dumanlı zirvelerine: Tarih, doğa ve sanat dolu 5 büyük Azerbaycan merkezini keşfedin.
+          </p>
+        </div>
+
+        <!-- ARAMA VE FİLTRELEME KONTROLLERİ (JAVASCRIPT İLE ÇALIŞIR) -->
+        <div class="filter-controls-wrapper">
+          
+          <!-- Arama Girişi -->
+          <div class="search-input-box">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="citySearchInput" placeholder="Şehir, anıt veya turistik yer ara... (Örn: Bakü, Saray, Gobustan, Şuşa)" aria-label="Şehir veya turistik yer ara">
+            <button id="clearSearchBtn" class="clear-search-btn" aria-label="Aramayı temizle" title="Temizle">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+
+          <!-- Kategori Filtre Butonları -->
+          <div class="filter-buttons" role="group" aria-label="Şehir Kategorileri">
+            <button class="filter-btn active" data-filter="all">
+              <i class="fa-solid fa-border-all"></i> Tümü
+            </button>
+            <button class="filter-btn" data-filter="metropol">
+              <i class="fa-solid fa-building"></i> Metropol &amp; Sahil
+            </button>
+            <button class="filter-btn" data-filter="unesco">
+              <i class="fa-solid fa-landmark"></i> UNESCO Mirasları
+            </button>
+            <button class="filter-btn" data-filter="kultur">
+              <i class="fa-solid fa-music"></i> Kültür &amp; Tarih
+            </button>
+            <button class="filter-btn" data-filter="doga">
+              <i class="fa-solid fa-mountain"></i> Doğa &amp; Arkeoloji
+            </button>
+          </div>
+
+          <!-- Sonuç Sayacı -->
+          <div class="filter-status-bar">
+            <span id="resultsCountText"><strong id="citiesCount">5</strong> turistik merkez gösteriliyor</span>
+          </div>
+
+        </div>
+
+        <!-- ŞEHİR KARTLARI IZGARASI (GRID) -->
+        <div class="cities-grid" id="citiesGrid">
+          
+          <!-- 1. KART: BAKÜ -->
+          <div class="city-card" data-category="metropol unesco" data-name="Bakü Baku Bakı Alev Kuleleri Flame Towers İçerişehir Kız Kalesi Haydar Aliyev Bulvar Halı Müzesi">
+            <div class="city-card-image-box">
+              <img src="images/baku_flame.jpg" alt="Bakü Alev Kuleleri ve Şehir Manzarası" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              <span class="city-category-badge"><i class="fa-solid fa-star"></i> Başkent</span>
+            </div>
+            <div class="city-card-body">
+              <div class="city-meta">
+                <span class="city-region"><i class="fa-solid fa-compass"></i> Abşeron / Hazar Denizi</span>
+                <span class="city-unesco-pill"><i class="fa-solid fa-award"></i> UNESCO</span>
+              </div>
+              <h3 class="city-card-title">Bakü (Bakı)</h3>
+              <p class="city-card-description">
+                Geleneksel taş mimarisiyle İçerişehir ve fütüristik Alev Kuleleri'nin kusursuz tezatını sunan "Rüzgarlar Şehri". Hazar kıyısındaki görkemli bulvarı, Zaha Hadid imzalı Haydar Aliyev Kültür Merkezi ve canlı gece hayatıyla Kafkasya'nın kalbi.
+              </p>
+              
+              <!-- Önemli Turistik Yerler -->
+              <div class="city-highlights">
+                <h4><i class="fa-solid fa-camera"></i> Öne Çıkan Yerler:</h4>
+                <ul>
+                  <li><i class="fa-solid fa-check"></i> <strong>Alev Kuleleri (Flame Towers):</strong> Şehrin her yerinden görünen modern aydınlatma harikası gökdelenler.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>İçerişehir &amp; Kız Kalesi:</strong> UNESCO listesindeki labirent taş sokaklar ve Şirvanşahlar Sarayı.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>Haydar Aliyev Merkezi:</strong> Keskin köşesi olmayan akıcı dalgalı mimarisiyle dünya çapında ödüllü başyapıt.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>Bakü Bulvarı &amp; Halı Müzesi:</strong> Hazar boyunca uzanan sahil şeridi ve kıvrılmış dev halı formundaki müze.</li>
+                </ul>
+              </div>
+
+              <div class="city-card-footer">
+                <button class="btn btn-sm btn-outline-primary open-city-modal" data-city="baku">
+                  <i class="fa-solid fa-circle-info"></i> Detaylı Bilgi
+                </button>
+                <span class="city-tag-pill">Hazar Sahili</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. KART: ŞEKİ -->
+          <div class="city-card" data-category="unesco kultur" data-name="Şeki Sheki Şəki Han Sarayı Şebeke İpek Yolu Karavansaray Kish Alban Kilisesi Helva Piti">
+            <div class="city-card-image-box">
+              <img src="images/sheki.jpg" alt="Şeki Hanlar Sarayı ve Şebeke Sanatı" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              <span class="city-category-badge"><i class="fa-solid fa-scroll"></i> İpek Yolu İncisi</span>
+            </div>
+            <div class="city-card-body">
+              <div class="city-meta">
+                <span class="city-region"><i class="fa-solid fa-compass"></i> Büyük Kafkas Etekleri</span>
+                <span class="city-unesco-pill"><i class="fa-solid fa-award"></i> UNESCO</span>
+              </div>
+              <h3 class="city-card-title">Şeki (Şəki)</h3>
+              <p class="city-card-description">
+                Tarihî İpek Yolu’nun en seçkin ticaret merkezlerinden biri. Yeşil dağların yamacında kiremit çatılı taş evleri, asırlık kervansarayları, ünlü Şeki helvası ve ahşap geçme vitray (Şebeke) sanatıyla yaşayan bir masal şehri.
+              </p>
+              
+              <!-- Önemli Turistik Yerler -->
+              <div class="city-highlights">
+                <h4><i class="fa-solid fa-camera"></i> Öne Çıkan Yerler:</h4>
+                <ul>
+                  <li><i class="fa-solid fa-check"></i> <strong>Şeki Hanları Sarayı:</strong> Çivisiz ve tutkalsız birleştirilen 5000 parçalık rengârenk Şebeke vitraylarıyla UNESCO mirası.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>Yukarı ve Aşağı Karavansaray:</strong> İpek Yolu tüccarlarını ağırlayan devasa taş mimarili tarihi hanlar.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>Kiş Alban Tapınağı:</strong> Kafkas Albanyası döneminden kalma antik taştan Hristiyan kilisesi.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>Şeki İpek Fabrikası &amp; Helvacılar:</strong> Saf ipek şallar (kelağayı) ve meşhur fındıklı Şeki helvası.</li>
+                </ul>
+              </div>
+
+              <div class="city-card-footer">
+                <button class="btn btn-sm btn-outline-primary open-city-modal" data-city="sheki">
+                  <i class="fa-solid fa-circle-info"></i> Detaylı Bilgi
+                </button>
+                <span class="city-tag-pill">Tarihî Şehir</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. KART: GENCE -->
+          <div class="city-card" data-category="kultur" data-name="Gence Ganja Gəncə Nizami Gencevi Şah Abbas Cuma Camii Şişeli Ev Han Bağı Göygöl Çınar">
+            <div class="city-card-image-box">
+              <img src="images/ganja.jpg" alt="Gence Şehri ve Nizami Türbesi" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              <span class="city-category-badge"><i class="fa-solid fa-feather"></i> Şiirin Başkenti</span>
+            </div>
+            <div class="city-card-body">
+              <div class="city-meta">
+                <span class="city-region"><i class="fa-solid fa-compass"></i> Batı Azerbaycan</span>
+                <span class="city-unesco-pill"><i class="fa-solid fa-landmark"></i> 4000 Yıllık Miras</span>
+              </div>
+              <h3 class="city-card-title">Gence (Gəncə)</h3>
+              <p class="city-card-description">
+                Azerbaycan'ın ikinci büyük kenti; dünya edebiyatının devi Nizami Gencevi'nin vatanı. Asırlık ulu çınarları, kırmızı tuğlalı zarif sokakları, Safevi mimarisi camileri ve yakınındaki zümrüt renkli Göygöl tabiatıyla huzur dolu bir kültür başkenti.
+              </p>
+              
+              <!-- Önemli Turistik Yerler -->
+              <div class="city-highlights">
+                <h4><i class="fa-solid fa-camera"></i> Öne Çıkan Yerler:</h4>
+                <ul>
+                  <li><i class="fa-solid fa-check"></i> <strong>Nizami Gencevi Türbesi &amp; Müzesi:</strong> Hamse şairinin hatırasına dikilen anıtsal kompleks.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>Şah Abbas (Cuma) Camii:</strong> 1606 yılında kırmızı tuğladan inşa edilen görkemli Safevi eseri.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>Şişeli Ev (Bottle House):</strong> 50 bine yakın cam şişeden yapılmış dünyaca ünlü sıra dışı mimari yapı.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>Han Bağı:</strong> Kafkasya'nın en eski parklarından biri olan huzurlu dinlenme alanı.</li>
+                </ul>
+              </div>
+
+              <div class="city-card-footer">
+                <button class="btn btn-sm btn-outline-primary open-city-modal" data-city="ganja">
+                  <i class="fa-solid fa-circle-info"></i> Detaylı Bilgi
+                </button>
+                <span class="city-tag-pill">Edebiyat &amp; Mimari</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. KART: ŞUŞA -->
+          <div class="city-card" data-category="kultur doga" data-name="Şuşa Shusha Susa Karabağ Cıdır Düzü Şuşa Kalesi Molla Penah Vagif Bülbül İsa Pınarı Hâr-ı Bülbül Mugam">
+            <div class="city-card-image-box">
+              <img src="images/shusha.jpg" alt="Şuşa Cıdır Düzü ve Karabağ Dağları" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              <span class="city-category-badge"><i class="fa-solid fa-crown"></i> Karabağ'ın Tacı</span>
+            </div>
+            <div class="city-card-body">
+              <div class="city-meta">
+                <span class="city-region"><i class="fa-solid fa-compass"></i> Karabağ Yaylası</span>
+                <span class="city-unesco-pill"><i class="fa-solid fa-music"></i> Kültür Başkenti</span>
+              </div>
+              <h3 class="city-card-title">Şuşa (Şuşa)</h3>
+              <p class="city-card-description">
+                Azerbaycan'ın resmî kültür başkenti ve Türk dünyasının gözbebeği. Sarp kayalıklar üzerine kurulu, havası şifalı, meşhur Mugam sanatçılarının, bestecilerin ve şairlerin beşiği olan açık hava müzesi niteliğindeki kahraman şehir.
+              </p>
+              
+              <!-- Önemli Turistik Yerler -->
+              <div class="city-highlights">
+                <h4><i class="fa-solid fa-camera"></i> Öne Çıkan Yerler:</h4>
+                <ul>
+                  <li><i class="fa-solid fa-check"></i> <strong>Cıdır Düzü:</strong> Daşaltı Kanyonu'na bakan nefes kesici uçurum manzarası ve Hâr-ı Bülbül festival alanı.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>Şuşa Kalesi Surları:</strong> Penah Ali Han tarafından 1750'lerde kurulan heybetli savunma kalesi.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>Vâkıf Türbesi:</strong> Büyük şair Molla Penah Vâkıf'ın restore edilen abidevi anıt mezarı.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>Bülbül ve Natavan Ev-Müzeleri:</strong> Azerbaycan opera ve şiir devlerinin tarihi konakları.</li>
+                </ul>
+              </div>
+
+              <div class="city-card-footer">
+                <button class="btn btn-sm btn-outline-primary open-city-modal" data-city="shusha">
+                  <i class="fa-solid fa-circle-info"></i> Detaylı Bilgi
+                </button>
+                <span class="city-tag-pill">Dağlık Şehir</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. KART: GOBUSTAN -->
+          <div class="city-card" data-category="unesco doga" data-name="Gobustan Qobustan Petroglif Kaya Resimleri Çamur Volkanları Gaval Daş Arkeoloji Milli Park">
+            <div class="city-card-image-box">
+              <img src="images/gobustan.jpg" alt="Gobustan Kaya Resimleri ve Petroglifler" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              <span class="city-category-badge"><i class="fa-solid fa-volcano"></i> 40.000 Yıllık Tarih</span>
+            </div>
+            <div class="city-card-body">
+              <div class="city-meta">
+                <span class="city-region"><i class="fa-solid fa-compass"></i> Bakü'nün 60 km Güneyi</span>
+                <span class="city-unesco-pill"><i class="fa-solid fa-award"></i> UNESCO</span>
+              </div>
+              <h3 class="city-card-title">Gobustan Millî Parkı (Qobustan)</h3>
+              <p class="city-card-description">
+                Tarih öncesi insanların yaşamını belgeleyen 6.000'den fazla kaya resmi (petroglif), müzikal kireçtaşı Gaval Daş ve uzay manzaralarını andıran aktif çamur volkanlarıyla dünyanın en etkileyici arkeolojik doğa koruma alanlarından biri.
+              </p>
+              
+              <!-- Önemli Turistik Yerler -->
+              <div class="city-highlights">
+                <h4><i class="fa-solid fa-camera"></i> Öne Çıkan Yerler:</h4>
+                <ul>
+                  <li><i class="fa-solid fa-check"></i> <strong>Antik Petroglifler:</strong> Av sahneleri, dans eden insanlar (Yallı dansının kökleri) ve kamış tekneleri betimleyen 40.000 yıllık gravürler.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>Çamur Volkanları:</strong> Dünyadaki tüm çamur volkanlarının yarısının bulunduğu fokurdayan gri kraterler.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>Gaval Daş (Çalgı Taşı):</strong> Vurulduğunda tef veya tambur gibi rezonans veren jeolojik müzik aleti.</li>
+                  <li><i class="fa-solid fa-check"></i> <strong>İnteraktif Arkeoloji Müzesi:</strong> Son teknoloji simülasyonlar ve 3D mağara turları.</li>
+                </ul>
+              </div>
+
+              <div class="city-card-footer">
+                <button class="btn btn-sm btn-outline-primary open-city-modal" data-city="gobustan">
+                  <i class="fa-solid fa-circle-info"></i> Detaylı Bilgi
+                </button>
+                <span class="city-tag-pill">Arkeoloji &amp; Doğa</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Arama Sonucu Bulunamadı Mesajı -->
+        <div id="noResultsMessage" class="no-results-message" style="display: none;">
+          <div class="no-results-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+          <h3>Aradığınız kriterlere uygun turistik yer bulunamadı</h3>
+          <p>Lütfen arama teriminizi kontrol edin veya farklı bir filtre kategorisi seçin.</p>
+          <button id="resetFiltersBtn" class="btn btn-primary btn-sm">
+            <i class="fa-solid fa-rotate-left"></i> Filtreleri Sıfırla
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ŞEHİR DETAY MODAL PENCERESİ (JAVASCRIPT İLE AÇILIR) -->
+    <div id="cityDetailModal" class="modal-overlay" aria-hidden="true" role="dialog" aria-labelledby="modalCityTitle">
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <h3 id="modalCityTitle" class="modal-title">Şehir Detayları</h3>
+          <button id="closeCityModalBtn" class="modal-close-btn" aria-label="Kapat">&times;</button>
+        </div>
+        <div class="modal-body" id="modalCityContent">
+          <!-- Dinamik JavaScript içeriği buraya yüklenecektir -->
+        </div>
+        <div class="modal-footer">
+          <button id="modalCloseActionBtn" class="btn btn-outline btn-sm">Kapat</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. BÖLÜM: KÜLTÜR VE GELENEKLER -->
+    <section id="kultur" class="section kultur-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-hands-holding-heart"></i> KÜLTÜREL MİRAS</span>
+          <h2 class="section-title">Kültür, Gelenekler ve Zengin Gastronomi</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Baharın gelişiyle alevlenen Nevruz ateşi, tezgahlarda ilmek ilmek dokunan ipek halılar, efsanevi mugam nağmeleri ve dillere destan Azerbaycan mutfağı.
+          </p>
+        </div>
+
+        <div class="culture-grid">
+          
+          <!-- Kültür Kartı 1: Nevruz Bayramı -->
+          <article class="culture-card">
+            <div class="culture-card-media">
+              <img src="images/culture_novruz.jpg" alt="Azerbaycan Nevruz Bayramı ve Honça Masası" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              <span class="culture-category-tag"><i class="fa-solid fa-fire"></i> Millî Bayram</span>
+            </div>
+            <div class="culture-card-content">
+              <h3>Nevruz Bayramı (Baharın Müjdecisi)</h3>
+              <p>
+                Azerbaycan'da Nevruz, doğanın uyanışını, bereketi ve kardeşliği simgeleyen en köklü bayramdır. Bayramdan önceki 4 hafta boyunca <strong>Su, Od (Ateş), Yel (Rüzgar) ve Toprak</strong> çarşambaları coşkuyla kutlanır.
+              </p>
+              <ul class="culture-feature-list">
+                <li><i class="fa-solid fa-seedling"></i> <strong>Semeni:</strong> Yaşamı ve yeniden doğuşu simgeleyen yeşil buğday çimi masaların baş köşesindedir.</li>
+                <li><i class="fa-solid fa-fire-flame-curved"></i> <strong>Ateşten Atlama:</strong> Mahallelerde yakılan "Tonkal" ateşinin üzerinden atlayarak eski yılın dertleri geride bırakılır.</li>
+                <li><i class="fa-solid fa-plate-wheat"></i> <strong>Bayram Honçası:</strong> Şekerbura, badambura, baklava, boyalı yumurtalar ve mumlarla donatılan zengin tepsi.</li>
+                <li><i class="fa-solid fa-hat-cowboy"></i> <strong>Papakatma:</strong> Çocukların kapı eşiklerine şapka bırakıp şekerleme ve ceviz topladığı sevimli gelenek.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Kültür Kartı 2: Azerbaycan Halı Sanatı -->
+          <article class="culture-card">
+            <div class="culture-card-media">
+              <img src="images/culture_carpet.jpg" alt="Geleneksel Azerbaycan Halı Sanatı" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              <span class="culture-category-tag"><i class="fa-solid fa-rug"></i> UNESCO Somut Olmayan Miras</span>
+            </div>
+            <div class="culture-card-content">
+              <h3>Azerbaycan Halı Sanatı</h3>
+              <p>
+                Azerbaycan halıları; derin felsefesi, geometrik motifleri ve doğal kök boyalarıyla 2010 yılında <strong>UNESCO İnsanlığın Somut Olmayan Kültürel Mirası</strong> olarak tescillenmiştir.
+              </p>
+              <ul class="culture-feature-list">
+                <li><i class="fa-solid fa-shapes"></i> <strong>7 Büyük Halı Ekolü:</strong> Karabağ, Tebriz, Kuba, Şirvan, Gence, Gazah ve Bakü ekollerinin her biri kendine has desen ve sembollere sahiptir.</li>
+                <li><i class="fa-solid fa-water"></i> <strong>Buta Motifi:</strong> Alevi, canı ve sonsuzluğu simgeleyen badem/damla biçimindeki kadim motif.</li>
+                <li><i class="fa-solid fa-landmark"></i> <strong>Dünyanın İlk Halı Müzesi:</strong> Bakü'de açılmış olan ve bizzat kıvrılmış dev bir halı şeklinde inşa edilen eşsiz mimari yapı.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Kültür Kartı 3: Geleneksel Kıyafetler ve Kelağayı -->
+          <article class="culture-card">
+            <div class="culture-card-media">
+              <img src="images/culture_costume.jpg" alt="Azerbaycan Millî Kıyafetleri ve Kelağayı" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              <span class="culture-category-tag"><i class="fa-solid fa-shirt"></i> Millî Giyim</span>
+            </div>
+            <div class="culture-card-content">
+              <h3>Geleneksel Kıyafetler ve İpek Kelağayı</h3>
+              <p>
+                Azerbaycan millî kıyafetleri ipek, kadife, sırma ve altın işlemelerin zarafetini taşır. Erkeklerde çuha ve arhalık cesareti simgelerken, kadın giyiminde zarafet ve renk ahengi öne çıkar.
+              </p>
+              <ul class="culture-feature-list">
+                <li><i class="fa-solid fa-ribbon"></i> <strong>Kelağayı (İpek Baş Örtüsü):</strong> Şeki ve Basgal kasabalarında üretilen, ahşap kalıplarla sıcak mumla desenlenen ve UNESCO tarafından korunan ipek şaheser.</li>
+                <li><i class="fa-solid fa-vest"></i> <strong>Arhalık ve Çuha:</strong> Geniş kollu, gümüş kemerle bağlanan asil Kafkas erkek giysisi.</li>
+                <li><i class="fa-solid fa-gem"></i> <strong>Gümüş Kemerler:</strong> Usta kuyumcuların telkâri tekniğiyle dövdüğü düğün ve tören kemerleri.</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Kültür Kartı 4: Mugam Müziği ve Halk Dansları -->
+          <article class="culture-card">
+            <div class="culture-card-media">
+              <img src="images/culture_music.jpg" alt="Mugam Üçlüsü Tar Kemança ve Yallı Dansı" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              <span class="culture-category-tag"><i class="fa-solid fa-music"></i> Müzik &amp; Dans</span>
+            </div>
+            <div class="culture-card-content">
+              <h3>Mugam Müziği ve Kadim Danslar</h3>
+              <p>
+                Mugam, doğaçlama ezgilerle felsefi klasik şiirlerin (gazel) birleştiği, insan ruhunun derinliklerine seslenen benzersiz bir müzik türüdür (UNESCO listesinde yer alır).
+              </p>
+              <ul class="culture-feature-list">
+                <li><i class="fa-solid fa-guitar"></i> <strong>Mugam Üçlüsü:</strong> Göğüste çalınan 11 telli <em>Tar</em>, at kılından yaylı <em>Kemança</em> ve ritim tutan <em>Gaval</em> (Daf).</li>
+                <li><i class="fa-solid fa-people-group"></i> <strong>Yallı Dansı:</strong> Kökleri Gobustan kaya resimlerine dayanan, el ele tutuşarak birlik ve beraberliği temsil eden coşkulu halay/dans.</li>
+                <li><i class="fa-solid fa-compact-disc"></i> <strong>Voyager Altın Plağı:</strong> 1977 yılında NASA tarafından uzaya gönderilen insanlık mesajında Azerbaycan balaban/mugam müziği yer almıştır.</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- AZERBAYCAN MUTFAĞI (ÖNE ÇIKAN LEZZETLER) -->
+        <div class="cuisine-showcase">
+          <div class="cuisine-header text-center">
+            <span class="badge-cuisine"><i class="fa-solid fa-utensils"></i> LEZZET DURAĞI</span>
+            <h3>Geleneksel Azerbaycan Mutfağı</h3>
+            <p>Zengin safran aroması, taze yeşillikler, nar taneleri ve asırlık pişirme teknikleriyle Kafkasya'nın en leziz sofrası.</p>
+          </div>
+
+          <div class="cuisine-grid">
+            
+            <!-- Lezzet 1: Plov -->
+            <div class="cuisine-card">
+              <div class="cuisine-img-wrap">
+                <img src="images/cuisine_plov.jpg" alt="Şah Plov (Kral Pilavı)" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+                <span class="cuisine-pill">Sofraların Şahı</span>
+              </div>
+              <div class="cuisine-info">
+                <h4>Şah Plov (Han Pilavı)</h4>
+                <p>Çıtır lavaş ekmeği içine sarılmış safranlı basmati pirinci, kestane, kuru kayısı, erik kurusu ve yumuşacık kuzu etiyle fırınlanan efsanevi bayram yemeği.</p>
+              </div>
+            </div>
+
+            <!-- Lezzet 2: Dolma -->
+            <div class="cuisine-card">
+              <div class="cuisine-img-wrap">
+                <img src="images/cuisine_dolma.jpg" alt="Yarpaq Dolması" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+                <span class="cuisine-pill">UNESCO Tescilli</span>
+              </div>
+              <div class="cuisine-info">
+                <h4>Yarpaq Dolması</h4>
+                <p>İncecik taze asma yaprağında kıyma, nane ve pirinçle lokum gibi minik minik sarılan, sarımsaklı süzme yoğurtla servis edilen milli gurur kaynağı.</p>
+              </div>
+            </div>
+
+            <!-- Lezzet 3: Düşbere -->
+            <div class="cuisine-card">
+              <div class="cuisine-img-wrap">
+                <img src="images/cuisine_dushbere.jpg" alt="Geleneksel Düşbere Çorbası" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+                <span class="cuisine-pill">Geleneksel Mantı</span>
+              </div>
+              <div class="cuisine-info">
+                <h4>Düşbərə (Düşbere)</h4>
+                <p>Bir çorba kaşığına 10 ila 15 tanesi sığacak büyüklükte özenle kapatılan, nefis kemik suyunda kaynatılıp sirke, sarımsak ve kuru naneyle içilen şifalı lezzet.</p>
+              </div>
+            </div>
+
+            <!-- Lezzet 4: Baklava & Şekerbura -->
+            <div class="cuisine-card">
+              <div class="cuisine-img-wrap">
+                <img src="images/cuisine_baklava.jpg" alt="Bakü Baklavası ve Şekerbura" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+                <span class="cuisine-pill">Tatlı Kültürü</span>
+              </div>
+              <div class="cuisine-info">
+                <h4>Bakü Baklavası &amp; Şəkərbura</h4>
+                <p>İncecik yufkalar arasına ceviz, fındık, kakule ve safran şerbetiyle hazırlanan elmas biçimli baklava ile ay hilalini simgeleyen nakışlı şekerburanın uyumu.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EK ÖZGÜN BÖLÜM: AZERBAYCAN TÜRKÇESİ MİNİ SÖZLÜK VE DEYİMLER KARTI -->
+        <div class="dictionary-card">
+          <div class="dictionary-header">
+            <span class="dictionary-badge"><i class="fa-solid fa-comments"></i> KARDEŞ DİLİN ZARAFETİ</span>
+            <h3>Azerbaycan Türkçesi Mini Sözlük &amp; Günlük Deyimler</h3>
+            <p>Ortak köklerden beslenen iki kardeş dilin en samimi ve sevilen günlük ifadeleri:</p>
+          </div>
+          <div class="dictionary-grid">
+            <div class="dict-item">
+              <div class="dict-az">Xoş gəlmisiniz!</div>
+              <div class="dict-tr"><i class="fa-solid fa-arrow-right"></i> Hoş geldiniz!</div>
+              <div class="dict-desc">Gönülden karşılama, misafirperverlik ifadesi.</div>
+            </div>
+            <div class="dict-item">
+              <div class="dict-az">Çox sağ olun! / Minnətdaram!</div>
+              <div class="dict-tr"><i class="fa-solid fa-arrow-right"></i> Çok teşekkür ederim!</div>
+              <div class="dict-desc">Şükran ve nezaket belirtirken kullanılır.</div>
+            </div>
+            <div class="dict-item">
+              <div class="dict-az">Necəsiniz? / Yaxşıyam</div>
+              <div class="dict-tr"><i class="fa-solid fa-arrow-right"></i> Nasılsınız? / İyiyim</div>
+              <div class="dict-desc">Hal hatır sorma ve esenlik bildirme.</div>
+            </div>
+            <div class="dict-item">
+              <div class="dict-az">Süfrəniz bərəkətli olsun!</div>
+              <div class="dict-tr"><i class="fa-solid fa-arrow-right"></i> Afiyet olsun, bereket dolsun!</div>
+              <div class="dict-desc">Yemekten sonra ev sahibine edilen dua.</div>
+            </div>
+            <div class="dict-item">
+              <div class="dict-az">Uğurlar olsun!</div>
+              <div class="dict-tr"><i class="fa-solid fa-arrow-right"></i> Başarılar / Yolun açık olsun!</div>
+              <div class="dict-desc">Bir işe başlarken ve veda ederken iyi dilek.</div>
+            </div>
+            <div class="dict-item">
+              <div class="dict-az">Bir millət, iki dövlət!</div>
+              <div class="dict-tr"><i class="fa-solid fa-arrow-right"></i> Bir millet, iki devlet! 🇹🇷 🇦🇿</div>
+              <div class="dict-desc">Türkiye ile Azerbaycan'ın ebedi kardeşlik vecizesi.</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 5. BÖLÜM: EDEBİYAT VE SANAT -->
+    <section id="edebiyat" class="section edebiyat-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-book-open"></i> SÖZ VE SANAT</span>
+          <h2 class="section-title">Edebiyat ve Sanatın Büyük İsimleri</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Doğu hümanizmini inşa eden şairlerden Doğu dünyasındaki ilk operanın bestecisine: Azerbaycan'ın aydınlık kültür mimarları.
+          </p>
+        </div>
+
+        <div class="masters-grid">
+          
+          <!-- Usta 1: Nizami Gencevi -->
+          <article class="master-card">
+            <div class="master-card-header">
+              <div class="master-avatar">
+                <img src="images/lit_nizami.jpg" alt="Nizami Gencevi" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              </div>
+              <div class="master-meta">
+                <h3 class="master-name">Nizami Gencevi</h3>
+                <span class="master-years">1141 – 1209 (Gence)</span>
+                <span class="master-role">Doğu Edebiyatının Zirvesi &amp; Mütefekkir</span>
+              </div>
+            </div>
+            <div class="master-body">
+              <p>
+                Dünya edebiyatına adını altın harflerle yazdıran Nizami Gencevi; insan sevgisi, adalet ve hoşgörüyü merkeze alan manzum destanlarıyla Doğu Rönesansı’nı başlatmıştır. Beş büyük mesnevisinden oluşan <strong>"Hamse"</strong> (Beşlik) dünya çapında bir şaheserdir.
+              </p>
+              <div class="master-works">
+                <strong>Önemli Eserleri:</strong>
+                <span>Leyli ve Mecnun</span> • <span>Hüsrev ü Şirin</span> • <span>Mahzen-i Esrar</span> • <span>Yedi Güzel</span> • <span>İskendername</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Usta 2: Fuzuli -->
+          <article class="master-card">
+            <div class="master-card-header">
+              <div class="master-avatar">
+                <img src="images/lit_fuzuli.jpg" alt="Muhammed Fuzuli" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              </div>
+              <div class="master-meta">
+                <h3 class="master-name">Muhammed Füzûlî</h3>
+                <span class="master-years">1494 – 1556</span>
+                <span class="master-role">Aşkın ve Şiirin Sultanı</span>
+              </div>
+            </div>
+            <div class="master-body">
+              <p>
+                Azerbaycan Türkçesini lirik şiirin zirvesine taşıyan Fuzuli; ilahi ve dünyevi aşkı, hicranı ve insan ruhunun çalkantılarını en derin dizelerle ifade etmiştir. <em>"Aşk derdiyle hoşem el çek ilacımdan tabib"</em> mısrasının sahibi olan şair, yüzyıllardır Doğu ve Batı edebiyatını etkilemektedir.
+              </p>
+              <div class="master-works">
+                <strong>Önemli Eserleri:</strong>
+                <span>Türkçe Divan</span> • <span>Leylâ vü Mecnûn Mesnevisi</span> • <span>Şikâyetnâme</span> • <span>Beng ü Bâde</span> • <span>Hadîkatü's-Süedâ</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Usta 3: Molla Penah Vâkıf -->
+          <article class="master-card">
+            <div class="master-card-header">
+              <div class="master-avatar">
+                <img src="images/lit_vagif.jpg" alt="Molla Penah Vâkıf" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              </div>
+              <div class="master-meta">
+                <h3 class="master-name">Molla Penah Vâkıf</h3>
+                <span class="master-years">1717 – 1797</span>
+                <span class="master-role">Karabağ Veziri &amp; Lirik Halk Şairi</span>
+              </div>
+            </div>
+            <div class="master-body">
+              <p>
+                Karabağ Hanlığı'nın bilge başveziri ve realist Azerbaycan şiirinin kurucusudur. Şiirlerinde halk dilini, koşma tarzını ve yaşam sevincini harmanlamış; Şuşa'yı edebiyatın merkezi haline getirmiştir. Şuşa'daki görkemli türbesi şehrin sembolik kültür anıtıdır.
+              </p>
+              <div class="master-works">
+                <strong>Önemli Katkıları:</strong>
+                <span>Halk Diliyle Yazılan Koşmalar</span> • <span>Karabağ Diplomasisi ve Hanlık Mimarisi</span> • <span>Vakıf Şiir Günleri Geleneği</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Usta 4: Üzeyir Hacıbeyli -->
+          <article class="master-card">
+            <div class="master-card-header">
+              <div class="master-avatar">
+                <img src="images/music_hajibeyov.jpg" alt="Üzeyir Hacıbeyli" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              </div>
+              <div class="master-meta">
+                <h3 class="master-name">Üzeyir Hacıbeyli</h3>
+                <span class="master-years">1885 – 1948</span>
+                <span class="master-role">Müslüman Doğu'nun İlk Opera Bestecisi</span>
+              </div>
+            </div>
+            <div class="master-body">
+              <p>
+                Klasik Batı müziği formu ile geleneksel Azerbaycan mugamını sentezleyen dahi besteci. 1908 yılında sahnelenen <strong>"Leyli ve Mecnun" operası ile tüm Doğu ve İslam dünyasının ilk operasına imza atmıştır</strong>. Aynı zamanda Azerbaycan Millî Marşı'nın ve "Köroğlu" operasının bestecisidir.
+              </p>
+              <div class="master-works">
+                <strong>Önemli Eserleri:</strong>
+                <span>Leyli ve Mecnun Operası (1908)</span> • <span>Köroğlu Operası</span> • <span>O Olmasın Bu Olsun (Meşedi İbad)</span> • <span>Azerbaycan Millî Marşı</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 6. BÖLÜM: DOĞAL GÜZELLİKLER (COĞRAFYA & TABİAT) -->
+    <section id="doga" class="section doga-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-tree"></i> TABİAT HARİKALARI</span>
+          <h2 class="section-title">Azerbaycan'ın Eşsiz Doğal Güzellikleri</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Hazar'ın dingin kıyılarından Kafkasya'nın karlı doruklarına, asırlardır sönmeyen ebedi alevlerden dünyanın en nadir çamur volkanlarına.
+          </p>
+        </div>
+
+        <div class="nature-grid">
+          
+          <!-- Doğa Kartı 1: Hazar Denizi -->
+          <div class="nature-card">
+            <div class="nature-card-img">
+              <img src="images/nature_caspian.jpg" alt="Hazar Denizi Kıyısı ve Günbatımı" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              <span class="nature-tag"><i class="fa-solid fa-water"></i> İç Deniz / Göl</span>
+            </div>
+            <div class="nature-card-content">
+              <h3>Hazar Denizi (Xəzər Dənizi)</h3>
+              <p>
+                Yüzölçümü bakımından dünyanın en büyük kapalı su kütlesi olan Hazar Denizi; Azerbaycan'ın iklimine, ekonomisine ve ruhuna hayat verir. Eşsiz günbatımları, Abşeron sahilleri, zengin mersin balığı faunası ve meşhur Hazar havyarıyla Kafkasya'nın mavisidir.
+              </p>
+            </div>
+          </div>
+
+          <!-- Doğa Kartı 2: Kafkas Dağları -->
+          <div class="nature-card">
+            <div class="nature-card-img">
+              <img src="images/nature_caucasus.jpg" alt="Kafkas Dağları ve Şahdağ Zirvesi" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              <span class="nature-tag"><i class="fa-solid fa-mountain"></i> Zirveler &amp; Yaylalar</span>
+            </div>
+            <div class="nature-card-content">
+              <h3>Kafkas Dağları ve Şahdağ</h3>
+              <p>
+                Büyük Kafkas Sıradağları, ülkenin kuzey sınırında 4.466 metreye (Bazardüzü) ulaşan karlı zirveleriyle heybet saçar. Şahdağ ve Tufandağ modern kış turizmi merkezleri, asırlık dağ köyü Kınalık (UNESCO) ve yemyeşil kanyonlarıyla doğaseverlerin cennetidir.
+              </p>
+            </div>
+          </div>
+
+          <!-- Doğa Kartı 3: Çamur Volkanları -->
+          <div class="nature-card">
+            <div class="nature-card-img">
+              <img src="images/nature_mud_volcanoes.jpg" alt="Gobustan Çamur Volkanları" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              <span class="nature-tag"><i class="fa-solid fa-volcano"></i> Jeolojik Mucize</span>
+            </div>
+            <div class="nature-card-content">
+              <h3>Gobustan Çamur Volkanları</h3>
+              <p>
+                Yeryüzündeki yaklaşık 1.000 çamur volkanının 400'den fazlası Azerbaycan'dadır. Lav yerine soğuk, mineralli şifalı kil ve gaz püskürten bu volkanlar Ay ve Mars yüzeyini andıran manzaralar oluşturur.
+              </p>
+            </div>
+          </div>
+
+          <!-- Doğa Kartı 4: Yanar Dağ ve Ateşgah -->
+          <div class="nature-card">
+            <div class="nature-card-img">
+              <img src="images/nature_yanardag.jpg" alt="Yanar Dağ Doğal Gaz Alevleri" class="zoomable-img" loading="lazy" onerror="this.onerror=null; this.src='images/hero_baku.jpg';">
+              <span class="nature-tag"><i class="fa-solid fa-fire"></i> Ebedî Ateş</span>
+            </div>
+            <div class="nature-card-content">
+              <h3>Yanar Dağ ve Ateşgâh Tapınağı</h3>
+              <p>
+                "Ateşler Ülkesi" unvanının ete kemiğe büründüğü yer! Abşeron Yarımadası'nda yer altından sızan doğal gazın yüzyıllardır yağmurda ve karda hiç sönmeden yandığı Yanar Dağ ile kadim Zerdüşt ibadethanesi Ateşgâh Tapınağı ziyaretçilerini büyüler.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 7. BÖLÜM: ETKİLEŞİMLİ AZERBAYCAN MİNİ BİLGİ YARIŞMASI (QUIZ) -->
+    <section id="quiz" class="section quiz-section">
+      <div class="container">
+        
+        <div class="section-header text-center">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> MİNİ TEST</span>
+          <h2 class="section-title">Azerbaycan Bilgi Yarışması</h2>
+          <div class="title-underline"></div>
+          <p class="section-subtitle">
+            Azerbaycan hakkındaki bilginizi 5 soruluk eğlenceli ve öğretici testimizle ölçün, anında puanınızı ve derece durumunuzu öğrenin!
+          </p>
+        </div>
+
+        <div class="quiz-wrapper" id="quizContainer">
+          
+          <!-- Quiz Başlangıç Kartı / Durum Paneli -->
+          <div class="quiz-status-header">
+            <div class="quiz-progress-info">
+              <span id="questionStepText">Soru <strong id="currentQuestionNum">1</strong> / 5</span>
+              <span class="quiz-category-badge" id="questionCategory">Genel Kültür</span>
+            </div>
+            <div class="quiz-score-pill">
+              <i class="fa-solid fa-trophy"></i> Puan: <strong id="liveScore">0</strong> / 5
+            </div>
+          </div>
+
+          <!-- İlerleme Çubuğu -->
+          <div class="quiz-progress-bar-container">
+            <div class="quiz-progress-bar-fill" id="quizProgressBar" style="width: 20%;"></div>
+          </div>
+
+          <!-- Soru ve Seçenekler Alanı (JS Tarafından Güncellenir) -->
+          <div class="quiz-card" id="quizCard">
+            <h3 class="quiz-question-text" id="quizQuestionText">
+              Soru yükleniyor...
+            </h3>
+
+            <!-- 4 Seçenek Butonu -->
+            <div class="quiz-options-grid" id="quizOptionsGrid">
+              <!-- Seçenekler dinamik yüklenecek -->
+            </div>
+
+            <!-- Cevap Açıklama Kutusu (Cevaplandıktan sonra açılır) -->
+            <div class="quiz-explanation-box" id="quizExplanationBox" style="display: none;">
+              <div class="explanation-icon" id="explanationIcon">
+                <i class="fa-solid fa-circle-info"></i>
+              </div>
+              <div class="explanation-text" id="explanationText">
+                Açıklama metni burada görünecek.
+              </div>
+            </div>
+
+            <!-- Alt Butonlar -->
+            <div class="quiz-footer-actions">
+              <button id="nextQuestionBtn" class="btn btn-primary" style="display: none;">
+                Sonraki Soru <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Sonuç Ekranı (Tüm sorular bitince gösterilir) -->
+          <div class="quiz-result-card" id="quizResultCard" style="display: none;">
+            <div class="result-badge-icon" id="resultBadgeIcon">
+              <i class="fa-solid fa-crown"></i>
+            </div>
+            <h3 class="result-title" id="resultTitle">Tebrikler!</h3>
+            <p class="result-score-lead">
+              Toplam Skorunuz: <strong id="finalScoreText">5 / 5</strong>
+            </p>
+            <p class="result-feedback-message" id="resultFeedbackMsg">
+              Harika bir sonuç! Tam bir Azerbaycan uzmanısınız.
+            </p>
+            
+            <div class="result-breakdown-box">
+              <div class="breakdown-item">
+                <span class="lbl">Doğru Cevap:</span>
+                <span class="val green" id="resultCorrectCount">5</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="lbl">Yanlış Cevap:</span>
+                <span class="val red" id="resultWrongCount">0</span>
+              </div>
+              <div class="breakdown-item">
+                <span class="lbl">Başarı Oranı:</span>
+                <span class="val gold" id="resultPercentage">100%</span>
+              </div>
+            </div>
+
+            <div class="result-actions">
+              <button id="restartQuizBtn" class="btn btn-primary">
+                <i class="fa-solid fa-rotate-left"></i> Testi Tekrar Çöz
+              </button>
+              <a href="#hero" class="btn btn-outline">
+                <i class="fa-solid fa-house"></i> Ana Sayfaya Dön
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== GÖRSEL BÜYÜTEÇ MODAL (LIGHTBOX) ==================== -->
+  <div id="imageLightboxModal" class="lightbox-overlay" aria-hidden="true" role="dialog" aria-label="Görsel Büyüteç">
+    <div class="lightbox-container">
+      <button id="closeLightboxBtn" class="lightbox-close-btn" aria-label="Kapat">&times;</button>
+      <img id="lightboxImg" src="images/hero_baku.jpg" alt="Büyütülmüş Görsel">
+      <div id="lightboxCaption" class="lightbox-caption">Görsel Açıklaması</div>
+    </div>
+  </div>
+
+  <!-- ==================== KONFETİ CANVAS BİLEŞENİ ==================== -->
+  <canvas id="confettiCanvas" class="confetti-canvas"></canvas>
+
+  <!-- ==================== ALT BİLGİ VE KAYNAKÇA (FOOTER) ==================== -->
+  <footer class="site-footer">
+    <!-- Azerbaycan Bayrak Renkleri Şeridi -->
+    <div class="flag-gradient-line"></div>
+
+    <div class="container footer-container">
+      
+      <!-- Sütun 1: Proje Hakkında -->
+      <div class="footer-col footer-about">
+        <div class="footer-logo">
+          <img src="images/flag.svg" alt="Azerbaycan Bayrağı">
+          <div>
+            <h3>AZERBAIJAN</h3>
+            <span>Ateşler Ülkesi</span>
+          </div>
+        </div>
+        <p class="footer-desc">
+          Azerbaycan'ın tarihini, coğrafyasını, kadim kültürünü, zengin mutfağını, edebiyatını ve doğal güzelliklerini modern web standartlarında tanıtan kapsamlı eğitim ve tanıtım projesi.
+        </p>
+        <p class="footer-motto">
+          <em>"Bir kere yükselen bayrak, bir daha inmez!"</em> — Mehmet Emin Resulzade
+        </p>
+      </div>
+
+      <!-- Sütun 2: Hızlı Bağlantılar -->
+      <div class="footer-col footer-links">
+        <h4 class="footer-heading">Hızlı Gezinti</h4>
+        <ul>
+          <li><a href="#hero"><i class="fa-solid fa-angle-right"></i> Ana Sayfa</a></li>
+          <li><a href="#tarih"><i class="fa-solid fa-angle-right"></i> Tarihsel Kronoloji</a></li>
+          <li><a href="#sehirler"><i class="fa-solid fa-angle-right"></i> Şehirler &amp; Gezi</a></li>
+          <li><a href="#kultur"><i class="fa-solid fa-angle-right"></i> Kültür, Halı &amp; Gastronomi</a></li>
+          <li><a href="#edebiyat"><i class="fa-solid fa-angle-right"></i> Edebiyat &amp; Sanat Üstatları</a></li>
+          <li><a href="#doga"><i class="fa-solid fa-angle-right"></i> Tabiat Harikaları</a></li>
+          <li><a href="#quiz"><i class="fa-solid fa-angle-right"></i> Azerbaycan Bilgi Yarışması</a></li>
+        </ul>
+      </div>
+
+      <!-- Sütun 3: Resmî Kaynakça & Doğrulama -->
+      <div class="footer-col footer-sources">
+        <h4 class="footer-heading">Kaynakça &amp; Resmî Bağlantılar</h4>
+        <p class="sources-note">Sitedeki tüm tarihî, coğrafi ve kültürel bilgiler resmî ve güvenilir kaynaklara dayandırılmıştır:</p>
+        <ul class="sources-list">
+          <li>
+            <a href="https://whc.unesco.org/en/statesparties/az" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> UNESCO Dünya Mirası Merkezi (Azerbaycan)
+            </a>
+          </li>
+          <li>
+            <a href="https://azerbaijan.travel" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Azerbaycan Resmî Turizm Portalı (azerbaijan.travel)
+            </a>
+          </li>
+          <li>
+            <a href="https://culture.gov.az" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Azerbaycan Cumhuriyeti Kültür Bakanlığı
+            </a>
+          </li>
+          <li>
+            <a href="https://heydaraliyevcenter.az" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Haydar Aliyev Merkezi Resmî Arşivi
+            </a>
+          </li>
+          <li>
+            <a href="http://azcarpetmuseum.az" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Azerbaycan Millî Halı Müzesi
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- En Alt Telif & Geliştirici Bandı -->
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p>
+          &copy; 2026 <strong>AZERBAIJAN – Ateşler Ülkesi</strong>. Tüm hakları saklıdır.
+        </p>
+        <p class="dev-tag">
+          Geliştirme Aracı: <span class="tag-accent">Google Antigravity</span> • Vanilla HTML5, CSS3 &amp; JavaScript
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Yukarı Çık Butonu (Scroll to Top) -->
+  <button id="backToTopBtn" class="back-to-top-btn" aria-label="Sayfanın Başına Dön" title="Yukarı Çık">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript Dosyası -->
+  <script src="script.js"></script>
+</body>
+</html>
